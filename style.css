@@ -1,0 +1,254 @@
+/* General Style */
+body {
+    background-image: url('./Assets/image.png');
+    /* Add your background image here */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #115252;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav-button {
+    padding: 20px;
+    margin: 20px;
+    background-color: #4c1b1b;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    box-shadow: 0 0 15px 5px #ff7f50;
+    transform: scale(1.05);
+}
+
+.nav-button h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Main Section */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #c351c3;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.food-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.food-images img {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.food-images img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid #ddd;
+}
+
+/* Main Section */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.8rem;
+    color: #7a3edc;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #231c1c;
+}
+
+/* Food Images */
+.food-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.food-images img {
+    width: 30%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(231, 37, 37, 0.1);
+}
+
+.food-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(255, 160, 122, 0.8);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid #ddd;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #9f3e9f;
+    font-size: 1rem;
+}
+
+/* Enhance link color */
+a {
+    color: #ff7f50;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+strong:hover {
+    color: #608bfa;
+    cursor: pointer;
+}
+
+li{    
+    text-align: left;
+}
+
+/* Full-screen blur overlay */
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    display: none;
+}
+
+/* Pop-up container for image */
+.image-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 90vw;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 10;
+    display: none; /* Hidden by default */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Image inside the pop-up */
+.popup-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 0px; /* Adjust for vertical positioning */
+    right: 0px; /* Adjust for horizontal positioning */
+    font-size: 25px;
+    color: rgb(0, 0, 0); /* Change color to black for visibility */
+    cursor: pointer;
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    padding: 0; /* Remove padding */
+    margin: 0; /*Remove margin*/
+    z-index: 20; /* Ensure it appears on top of the image */
+}
+
+h3{
+    text-align: left;
+    color: #311396;
+    text-decoration: underline;
+}
+
+h4 {
+    color: #813987;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: underline rgb(9, 138, 218);
+}
+
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
