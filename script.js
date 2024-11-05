@@ -5,7 +5,7 @@ document.querySelectorAll("ul li strong").forEach(item => {
 
         // Set the image source for the popup based on the food item clicked
         const popupImage = document.querySelector(".popup-image");
-        popupImage.src = `./Assets/${imageName}.jpg`;  // Assuming the images are named after data-img values
+        popupImage.src = `${imageName}.jpg`;  // Assuming the images are named after data-img values
 
         // Show overlay and popup
         document.querySelector(".blur-overlay").style.display = "block";
