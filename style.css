@@ -1,6 +1,6 @@
 /* General Style */
 body {
-    background-image: url('image.png');
+    background-image: url('./assets/image.png');
     /* Add your background image here */
     background-size: cover;
     background-attachment: fixed;
